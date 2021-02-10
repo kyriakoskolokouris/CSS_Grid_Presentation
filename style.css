@@ -1,0 +1,30 @@
+.objective {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "desktop mobile";
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop{
+
+  align-items: center;
+  grid-area: desktop;
+}
+
+.mobile {
+  grid-area: mobile;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "desktop mobile ";
+  justify-content: center;
+  align-items: center;
+}
+
