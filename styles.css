@@ -1,0 +1,42 @@
+#presentation-title{
+ font-family: 'Times New Roman', Times, serif;
+ text-transform: uppercase;
+ color: red;
+ }
+.team{
+ color:blue;
+ font-family: 'Courier New', Courier, monospace;
+ text-transform: capitalize;
+ font-size: 1.5em;
+ font-weight: bolder;
+}
+
+div .sub-title{
+ font-family: 'Times New Roman', Times, serif;
+ color: #ffff00;
+ text-transform: capitalize;
+ letter-spacing: 0.1rem;
+}
+
+.color-blue{
+ color:blue;
+}
+
+.para{
+ text-align: justify;
+ }
+
+ .image-one{
+  width: 600px;
+  height: 600px;
+ }
+
+ .image-three{
+  width: auto;
+  height: 500px;
+ }
+
+ .gvsf{
+  height: 500px;
+  width: 500px;
+ }

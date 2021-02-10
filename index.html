@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>CSS GRID Presentation</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,61 +13,72 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="styles.css">
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>CSS Grid Layout</h1>
+					<h1 id="presentation-title">CSS Grid Layout</h1>
 					<img src="">
 					<!--  CSS GRID CHANGES EVERYTHING -->
-					<p> By Team Brendan </p>
+					<p class="team"> By Team Brendan </p>
 				</section>
 				<section class="summary">
-					<h2>Summary</h2>
-				<ol>
-					<li>What is grid? </li>
-					<li>Why Grid is important</li>
-					<li>CSS grid features</li>
-					<li>CSS Grid Terminology</li>
-					<li>----------</li>
-					<li> Sofias part</li>
-					
-					<li></li>
-					<li></li>
-				</ol>
+					<h2 class="sub-title">Summary</h2>
+					<ol>
+						<li>What is grid? </li>
+						<li>Why Grid is important</li>
+						<li>CSS grid features</li>
+						<li>CSS Grid Terminology</li>
+						<li>----------</li>
+						<!-- <li> Sofias part</li> -->
+
+						<li></li>
+						<li></li>
+					</ol>
 				</section>
 				<section id="gridintro">
+					<!-- Created two sections because what is grid and why important were not fit on one Page -->
 					<section>
-						<h2>What is grid? IMAGE and keywords</h2>
-						<p> A grid is a set of intersecting horizontal and vertical lines defining columns and rows.
+						<h2 class="sub-title">What is grid? <br> <span class="color-blue">Images and keywords</span>
+						</h2>
+						<p class="para"> A grid is a set of intersecting horizontal and vertical lines defining columns
+							and rows.
 							Elements can be placed onto the grid within these <strong>column and row lines</strong>.
-							CSS Grid Layout  introduces a <em>two-dimensional grid system to CSS</em>.
-							 <hr>
-							 WHY IMPORTANT <br>
-
-							Grids can be used to lay out major page areas or small user interface elements.
-							Grid layout offers a grid-based layout system, with rows and columns, making it easier to design web-pages without having to use floats and positioning.
+							CSS Grid Layout introduces a <em>two-dimensional grid system to CSS</em>.
 						</p>
 					</section>
+
 					<section>
-							
-						<img src="images/desktop-grid.jpg" alt="">
+						<h2 class="sub-title">WHY IMPORTANT</h2>
+
+						<p class="para">Grids can be used to lay out major page areas or small user interface elements.
+							Grid layout offers a grid-based layout system, with rows and columns, making it easier to
+							design web-pages without having to use floats and positioning.</p>
+
+
+					</section>
+					<section>
+						<img class="image-one" src="images/desktop-grid.jpg" alt="">
+						<!-- Image size is decreased because it is not fit on page -->
 					</section>
 					<section>
 						<img src="images/what -is-grid.jpg" alt="">
 					</section>
 					<section>
-							<img src="images/mobilegrid.jpg" alt="">
+						<img class="image-three" src="images/mobilegrid.jpg" alt="">
+						<!-- Image size is decreased because it is not fit on page -->
 					</section>
-
 				</section>
-				
-  <!-- Slide  -->
+
+
+				<!-- Slide  -->
 
 				<section id="features">
-					<h2> The Basic Grid Features </h2>
-					<p> 
+					<h2 class="sub-title"> The Basic Grid Features </h2>
+					<p>
 						Fixed and flexible track sizes. ...
 						<br>
 						Item placement. ...
@@ -83,49 +95,65 @@
 						Track listings with repeat() notation. ...
 					</p>
 				</section>
-				
-					
-					<section>
-						<h4 styles="font-size:small;">Difference between Grid and Flexbox</h4>
-						<img  src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2020/2020-10/flexbox-compared-css-grid.png" style="padding-top:80px;">
-					</section>
-					<!-- Slide -->
+
+
 				<section>
-						<h4 styles="color:red;">Advantages of the 2-Dimensional layout</h4>
-						<ul>
-							<li>As many columns or rows as we want</li> <br>
-							<li> Ability to have <u> different layouts</u></li> <br>
-							<li>No need to create <u>a lot of media queries</u></li><br>
-							<li> Faster, more responsive and SEO-friendly websites </li>
-						</ul>
+					<h2 class="sub-title">Grid Vs FlexBox</h2>
+
+					<img class="gvsf"
+						src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2020/2020-10/flexbox-compared-css-grid.png"
+						style="padding-top:40px;">
+					<!-- Image size is decreased because it is not fit on page -->
 				</section>
-					
-
-
-			
+				<!-- Slide -->
 				<section>
-					<h3>where and how do we use Grid</h3>
+					<h3 class="sub-title">Advantages of the 2-Dimensional layout</h3>
+					<ul>
+						<li>As many columns or rows as we want</li> <br>
+						<li> Ability to have <u> different layouts</u></li> <br>
+						<li>No need to create <u>a lot of media queries</u></li><br>
+						<li> Faster, more responsive and SEO-friendly websites </li>
+					</ul>
+				</section>
+
+
+
+
+				<section>
+					<div>
+						<h2 class="sub-title">
+							where and how do we use
+							<span class="color-blue">
+								Grid
+							</span>
+						</h2>
+					</div>
+
+
+					<section>
+						<img src=" images/newspaper.jpg" alt="">
+					</section>
 					<section>
 						<img src="images/newspaper.jpg" alt="">
+						<!-- <img src="images/landing-pagee (1).png" alt=""> -->
 					</section>
 					<section>
-						<img src="images/landing-pagee (1).png" alt="">
+						<img src="images/newspaper.jpg" alt="">
+						<!-- <img src="images/landing-page.jpg" alt=""> -->
 					</section>
 					<section>
-						<img src="images/landing-page.jpg" alt="">
-					</section>
-					<section>
-						<img src="images/landing-page (2).jpg" alt="">
+						<img src="images/newspaper.jpg" alt="">
+						<!-- <img src="images/landing-page (2).jpg" alt=""> -->
 					</section>
 
 				</section>
 
-				<section> 
+				<section>
 
 				</section>
-				
-				
-				
+
+
+
 				<section></section>
 				<section></section>
 				<section></section>
@@ -144,8 +172,9 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 			});
 		</script>
 	</body>
+
 </html>
