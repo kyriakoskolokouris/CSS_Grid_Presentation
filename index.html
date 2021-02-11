@@ -17,11 +17,13 @@
 
 	<style>
 		h1,
-		h2,h3,h4 {
+		h2,
+		h3,
+		h4 {
 			border: 2px solid chocolate;
 			background-color: rgba(151, 92, 44, 0.363);
 			width: auto;
-		
+
 
 		}
 
@@ -30,7 +32,7 @@
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
 			color: azure;
-			width:  100%;
+			width: 100%;
 
 		}
 
@@ -51,7 +53,7 @@
 
 		}
 
-		 li {
+		li {
 			list-style: disc;
 			/* color: orange; */
 			margin: 5px;
@@ -59,7 +61,7 @@
 			transition-property: margin-left;
 			transition-duration: 1s;
 			text-decoration: none;
-		
+
 
 		}
 
@@ -71,30 +73,37 @@
 		.gridintro {
 			font-size: 1rem;
 		}
+
 		img {
 			height: 600px;
 		}
+
 		#examples img {
-			margin-top:10%;
+			margin-top: 10%;
 		}
-		#thankyou p 
-		 {
-				font-size: 200px;
-			
+
+		#thankyou p {
+			font-size: 200px;
+
 		}
-		#slideone img{
-					/* width: 400px; */
-					height: 320px;
+
+		#slideone img {
+			/* width: 400px; */
+			height: 320px;
 		}
-		h1,h2:hover{
+
+		h1,
+		h2:hover {
 			color: yellow;
 		}
+
 		.mange-image {
-			  width: 600px; 
+			width: 600px;
 			height: 600px;
 		}
-		.responsive-image{
-			height:600px;
+
+		.responsive-image {
+			height: 600px;
 			width: 300px;
 		}
 	</style>
@@ -103,7 +112,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			
+
 			<section id="slideone" data-auto-animate data-transition="slide-in fade-out" data-transition-speed="slow">
 				<h1>CSS Grid Layout</h1>
 				<!-- <img src="images/what -is-grid.jpg" alt=""> -->
@@ -122,48 +131,48 @@
 					<li>Responsive Grid Layout </li>
 				</ul>
 			</section>
-			
+
 
 			<section id="gridintro" data-transition="slide-in fade-out" data-transition-speed="slow">
-			
-					<h2>What is grid?</h2>
-					<p> A grid is a set of intersecting horizontal and vertical lines defining columns and rows.
-						Elements can be placed onto the grid within these <strong>column and row lines</strong>.
-						CSS Grid Layout introduces a <em>two-dimensional grid system to CSS</em>.
-					
-					</p>
+
+				<h2>What is grid?</h2>
+				<p> A grid is a set of intersecting horizontal and vertical lines defining columns and rows.
+					Elements can be placed onto the grid within these <strong>column and row lines</strong>.
+					CSS Grid Layout introduces a <em>two-dimensional grid system to CSS</em>.
+
+				</p>
 			</section>
 			<section>
 				<h2>
-						WHY IMPORTANT
-					</h2>
-					<p>
+					WHY IMPORTANT
+				</h2>
+				<p>
 
-						Grids can be used to lay out major page areas or small user interface elements.
-						Grid layout offers a grid-based layout system, with rows and columns, making it easier to design
-						web-pages without having to use floats and positioning.
-					</p>
+					Grids can be used to lay out major page areas or small user interface elements.
+					Grid layout offers a grid-based layout system, with rows and columns, making it easier to design
+					web-pages without having to use floats and positioning.
+				</p>
 			</section>
-					
+
 
 			<section id="features" data-transition="slide-in fade-out" data-transition-speed="slow">
-					<h2> The Basic Grid Features </h2>
-					<p>
-						Fixed and flexible track sizes. ...
-						<br>
-						Item placement. ...
-						<br>
-						Creation of additional tracks to hold content. ...
-						<br>
+				<h2> The Basic Grid Features </h2>
+				<p>
+					Fixed and flexible track sizes. ...
+					<br>
+					Item placement. ...
+					<br>
+					Creation of additional tracks to hold content. ...
+					<br>
 
-						Alignment control. ...
-						<br>
-						Control of overlapping content. ...
-						<br>
-						The fr Unit. ...
-						<br>
-						Track listings with repeat() notation. ...
-					</p>
+					Alignment control. ...
+					<br>
+					Control of overlapping content. ...
+					<br>
+					The fr Unit. ...
+					<br>
+					Track listings with repeat() notation. ...
+				</p>
 			</section>
 			<section>
 				<h4 styles="color:red;">Advantages of the 2-Dimensional layout</h4>
@@ -177,49 +186,50 @@
 
 
 			<section id="flexboxvsgrid">
-				
-						<h3> Grid VS Flexbox</h4>
-							<section data-transition="slide-in fade-out" data-transition-speed="slow">
+
+				<h3> Grid VS Flexbox</h4>
+					<section data-transition="slide-in fade-out" data-transition-speed="slow">
 						<img style="margin-top: 10%;"
 							src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2020/2020-10/flexbox-compared-css-grid.png">
-				</section>
-				<!-- George  i have updted this section modify it-->
-				<section style="font-size: xx-large;" data-transition="slide-in fade-out" data-transition-speed="slow">
-					<table>
-						<tr>
-						<td>ideal with big design</td>
-						<td>good for small design, with few rows and columns</td>
-					</tr>
-					<tr>
-						<td>display: grid</td>
-						<td>display: flex</td>
-					</tr>
-					<tr>
-						<td>when one know how the elemts will look like</td>
-					<td>when one dont know how the the content is going to look</td>
-				</tr>
-				<tr>
-					<td>Three dimensional</td>
-					<td>Two dimensional</td>
-				</tr>
-				<tr>
-					<td>Grid Gap Property</td>
-					<td>No Break Points</td>
-				</tr>
-				<tr>
-					<td>Over Lap Elemant. need rows and columns</td>
-					<td>Need some Hacks like (margins,
-						transforms, or absolute positioning)</td>
-				</tr>
-				<tr>
-					<td>You need a layout-first design</td>
-					<td>two-dimensional layout system helps a lot when
- to use rows and columns together, and position the elements the way we want</td>
-				</tr>
-					</table>
-						
-				</section>
-				<!-- <section style="font-size: 1.7rem;" data-transition="slide-in fade-out" data-transition-speed="slow"> 
+					</section>
+					<!-- George  i have updted this section modify it-->
+					<section style="font-size: xx-large;" data-transition="slide-in fade-out"
+						data-transition-speed="slow">
+						<table>
+							<tr>
+								<td>ideal with big design</td>
+								<td>good for small design, with few rows and columns</td>
+							</tr>
+							<tr>
+								<td>display: grid</td>
+								<td>display: flex</td>
+							</tr>
+							<tr>
+								<td>when one know how the elemts will look like</td>
+								<td>when one dont know how the the content is going to look</td>
+							</tr>
+							<tr>
+								<td>Three dimensional</td>
+								<td>Two dimensional</td>
+							</tr>
+							<tr>
+								<td>Grid Gap Property</td>
+								<td>No Break Points</td>
+							</tr>
+							<tr>
+								<td>Over Lap Elemant. need rows and columns</td>
+								<td>Need some Hacks like (margins,
+									transforms, or absolute positioning)</td>
+							</tr>
+							<tr>
+								<td>You need a layout-first design</td>
+								<td>two-dimensional layout system helps a lot when
+									to use rows and columns together, and position the elements the way we want</td>
+							</tr>
+						</table>
+
+					</section>
+					<!-- <section style="font-size: 1.7rem;" data-transition="slide-in fade-out" data-transition-speed="slow"> 
 						<h3>CSS grid is better when:</h3>
 						<ul>
 							<li>You have a complex design to implement  —  in some use cases, we have complex designs to
@@ -242,38 +252,38 @@
 						</ul>
 				</section>-->
 			</section>
-		
+
 			<section>
-					
+
 				<section>
 					<h3>css grid Terminology</h3>
-				  <ul>
-					  <li>Grid Container</li>
-					  <li>Grid Item</li>
-					  <li>Grid Line</li>
-					  <li>Grid Cell</li>
-					  <li>Grid Track</li>
-					  <li>Grid Area</li>
-					  <li>Grid Gap</li>
-				  </ul>
+					<ul>
+						<li>Grid Container</li>
+						<li>Grid Item</li>
+						<li>Grid Line</li>
+						<li>Grid Cell</li>
+						<li>Grid Track</li>
+						<li>Grid Area</li>
+						<li>Grid Gap</li>
+					</ul>
 				</section>
-				  <section>
-					  <h4>Grid Container</h4>
-					  <p>Element containing a grid, defined by setting 
+				<section>
+					<h4>Grid Container</h4>
+					<p>Element containing a grid, defined by setting
 
-						display: grid; 
-						</p>
-				 
-					  <h4>Grid Item</h4>
-					  <p>Element that is a direct descendant of the grid container.
+						display: grid;
+					</p>
+
+					<h4>Grid Item</h4>
+					<p>Element that is a direct descendant of the grid container.
 
 					</p>
-				  </section>
-				  <section>
-					  <h4>Grid Line</h4>
-					  <img src="images/grid-line.png" alt="">
-				  </section>
-				  <section>
+				</section>
+				<section>
+					<h4>Grid Line</h4>
+					<img src="images/grid-line.png" alt="">
+				</section>
+				<section>
 					<h4>Grid Cell</h4>
 					<img src="images/grid-cell.png" alt="">
 				</section>
@@ -290,140 +300,158 @@
 					<img src="images/grid-gap.png" alt="">
 				</section>
 			</section>
-			
 
-				<!-- sofia's -->
-						
-				<section class="mange-image">
-							<h3>Responsive CSS Grid Layout</h3>
-							<div class="objective">
-								<img src="images/1.desktop_layout.png" class="desktop" alt="Desktop Layout">
-								<img src="images/1.mobile_layout.png" class="mobile" alt="Mobile Layout">
-							</div>
-				</section>
 
-				<section class="mange-image">
-						<h3>Grid Sketchup</h3>
-						<div class="objective">
-							<img src="images/2.desktop_grid.png" class="desktop" alt="Desktop Grid Layout">
-							<img src="images/2.mobile_grid.png" class="mobile" alt="Mobile Grid Layout">
-						</div>
-				</section>
+			<!-- sofia's -->
 
-				<section >
-						<h3>Container and its Children</h3>
-						<div  >
-							<img class="responsive-image" src="images/3.Creating the container and it's children.png" alt="Creating the container and it's children code">
-							<img class="mange-image" src="images/3.Creating the container and it's children_2.png" alt="Creating the container and it's children">
-						</div>
-				</section>
+			<section>
+				<p>Responsive CSS Grid Layout</p>
+				<div class="objective">
+					<img src="images/1.desktop_layout.png" class="desktop" alt="Desktop Layout">
+					<img src="images/1.mobile_layout.png" class="mobile" alt="Mobile Layout">
+				</div>
+			</section>
 
-				<section class="mange-image">
-						<h3>Creating Columns</h3>
-						<section>
-						
-							<img  src="images/4.Defining the columns.png" alt="Defining the columns code">
-						</section>
-						<section>
-							<img  src="images/4.Defining the columns_2.png" alt="Defining the columns">
-						</section>
-				</section>
+			<section>
+				<p>Grid Sketchup</p>
+				<div class="objective">
+					<img src="images/2.desktop_grid.png" class="desktop" alt="Desktop Grid Layout">
+					<img src="images/2.mobile_grid.png" class="mobile" alt="Mobile Grid Layout">
+				</div>
+			</section>
 
-				<section >
-						<h3>Creating rows</h3>
+			<section>
+				<p>Creating the Container and its Children</p>
+				<div class="container">
+					<img src="images/3.1.Creating the container and it's children.png"
+						alt="Creating the container and it's children">
+					<img src="images/3.2.Adding background color to the elements.png"
+						alt="Adding background color to the elements">
+					<img src="images/3.3.Creating the container and it's children.png"
+						alt="Creating the container and it's children code">
+				</div>
+			</section>
 
-						<section>
-							<img   class="responsive-image" src="images/5.Defining the rows.png" alt="Defining the rows">
-						
-							<img class="mange-image" src="images/5.Defining the rows_2.png" alt="Defining the raws code">
-						</section>
-				</section>
+			<section>
+				<p>Desktop preview</p>
+				<div>
+					<img src="images/2.desktop_grid.png" alt="Desktop grid preview">
+				</div>
+			</section>
 
-				<!-- we can delete following  section -->
-				<section >
-						<h4>background colour to the element</h4>
-						<section>
-							<img class="responsive-image" style="margin-top:6%;" src="images/6.Adding background color to the elements.png" alt="Adding background colour to the elements">
-						
-							<img class="mange-image" src="images/6.Adding background color to the elements_2.png" alt="Adding background colour to the elements code">
-						</section>
-						
-				</section>
-				
-					<section>
-							<h3>Specifying the grid-template area</h3>
-							<div>
-								<img class="responsive-image" src="images/7.Specifying grid-template-area.png" alt="Specifying the grid-template area">
-							
-						
-								<img class="mange-image"  src="images/7.Specifying grid-template-area_2.png" alt="Specifying the grid-template area code">
-							</div>
-					</section>
+			<section>
+				<p>Creating Columns</p>
+				<div>
+					<img src="images/4.Defining the columns.png" alt="Defining the columns code">
+					<img src="images/4.Defining the columns_2.png" alt="Defining the columns">
+				</div>
+			</section>
 
-					<section >
-							<h3>Assigning grid areas</h3>
-							<div>
-								<img class="responsive-image" src="images/8.Assigning grid areas.png" alt="Assigning grid areas">
-								<img class="mange-image"  src="images/8.Assigning grid areas_2.png" alt="Assigning gris areas code">
-							</div>
-					</section>
-				
+			<section>
+				<p>Desktop preview</p>
+				<div>
+					<img src="images/2.desktop_grid.png" alt="Desktop grid preview">
+				</div>
+			</section>
 
-				<section >
-						<h3>Grid Gap</h3>
-						<div>
-							<img class="responsive-image"  src="images/9.Creating space between elements.png" alt="Creating space between the elements">
-							<img class="mange-image"   src="images/9.Creating space between elements_2.png" alt="Creating space between the elements code">
-						</div>
+			<section>
+				<p>Creating rows</p>
+				<div>
+					<img src="images/5.Defining the rows.png" alt="Defining the rows">
+					<img src="images/5.Defining the rows_2.png" alt="Defining the raws code">
+				</div>
+			</section>
+
+			<section>
+				<p>Desktop preview</p>
+				<div>
+					<img src="images/2.desktop_grid.png" alt="Desktop grid preview">
+				</div>
+			</section>
+
+			<section>
+				<p>Specifying the grid-template area</p>
+				<div>
+					<img src="images/6.Specifying grid-template-area.png" alt="Specifying the grid-template area">
+					<img src="images/6.Specifying grid-template-area_2.png"
+						alt="Specifying the grid-template area code">
+				</div>
+			</section>
+
+			<section>
+				<p>Assigning grid areas</p>
+				<div>
+					<img src="images/7.Assigning grid areas.png" alt="Assigning grid areas">
+					<img src="images/7.Assigning grid areas_2.png" alt="Assigning gris areas code">
+				</div>
+			</section>
+
+			<section>
+				<p>Creating space between the elements</p>
+				<div>
+					<img src="images/8.Creating space between elements.png" alt="Creating space between the elements">
+					<img src="images/8.Creating space between elements_2.png"
+						alt="Creating space between the elements code">
+				</div>
+			</section>
+
+			<section>
+				<p>Styling the elements</p>
+				<div>
+					<img src="images/9.Styling the elements.png" alt="Styling the elements">
+					<img src="images/9.Styling the elements_2.png" alt="Styling the elements code">
+				</div>
+			</section>
+
+			<section>
+				<p>Mobile preview</p>
+				<div>
+					<img src="images/2.mobile_grid.png" alt="">
+				</div>
+			</section>
+
+			<section>
+				<p>Adding a media query</p>
+				<div>
+					<img src="images/10.Adding a media query.png" alt="Adding a media query">
+					<img src="images/10.Adding a media query_2.png" alt="Adding a media query code">
+				</div>
+			</section>
+
+
+
+
+			<section id="examples" data-transition="slide-in fade-out" data-transition-speed="slow">
+				<h3>Some examples of Grid</h3>
+
+				<section data-transition="slide-in fade-out" data-transition-speed="slow">
+					<img src="images/newspaper.jpg" alt="">
 				</section>
 
 				<section>
-						<h3>Styling the elements</h3>
-						<div >
-							<img class="responsive-image" src="images/10.Styling the elements.png" alt="Styling the elements">
-							<img class="mange-image"src="images/10.Styling the elements_2.png" alt="Styling the elements code">
-						</div>
+					<img src="images/grid-example.jpg" alt="">
 				</section>
-
 				<section>
-						<h3>Adding a media query</h3>
-						<div>
-							<img class="mange-image" src="images/11.Adding a media query.png" alt="Adding a media query">
-							<img class="responsive-image" src="images/11.Adding a media query_2.png" alt="Adding a media query code">
-						</div>
+					<img src="images/landing-page-full.jpg" alt="">
 				</section>
-			
-				<section id="examples" data-transition="slide-in fade-out" data-transition-speed="slow">
-						<h3>Some examples of Grid</h3>
-
-						<section data-transition="slide-in fade-out" data-transition-speed="slow">
-							<img src="images/newspaper.jpg" alt="">
-						</section>
-
-						<section>
-							<img src="images/grid-example.jpg" alt="">
-						</section>
-						<section>
-							<img src="images/landing-page-full.jpg" alt="">
-						</section>
-						<section>
-							<img src="images/bussiness.png" alt="">
-						</section>
-						<section>
-							<img src="images/landing-page.png" alt="">
-						</section>
-
+				<section>
+					<img src="images/bussiness.png" alt="">
 				</section>
+				<section>
+					<img src="images/landing-page.png" alt="">
+				</section>
+
+			</section>
 			<section id="thankyou">
-					<p>
-						THANKYOU🙂
-					
-					</p>
+				<p>
+					THANKYOU🙂
+
+				</p>
 
 			</section>
 
-			</div>
 		</div>
+	</div>
 
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
