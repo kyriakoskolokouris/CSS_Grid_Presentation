@@ -31,7 +31,7 @@
 			animation: fadeInAnimation ease 5s;
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
-			color: azure;
+			color: rgb(233, 245, 245);
 			width: 100%;
 
 		}
@@ -142,16 +142,24 @@
 			display: flex;
 			margin-left: 300px;
 		}
-
-		.table {
-			
-			font-size: 1.5rem;
-		}
-		
 		#gridpower img {
 			height: 300px;
 			margin-top: 100px;
-			font-size: 0.5rem;
+			font-size: 0.5rem;}
+
+		.table  {
+			
+			font-size: 1.7rem;
+			border: 2px solid black;
+			border-collapse: collapse;
+			
+		}
+		
+		
+		
+	td { 
+			 border: 1px solid rgb(233, 92, 26); 
+			width: 500px;
 		}
 
 			
@@ -236,7 +244,7 @@
 
 			<section id="flexboxvsgrid">
 
-				<h3> Grid VS Flexbox</h4>
+				<h3> Flexbox Vs Grid</h4>
 					<section data-transition="slide-in fade-out" data-transition-speed="slow">
 						<img style="margin-top: 10%;"
 							src="images/flexboxvscssgrid.png">
@@ -246,34 +254,45 @@
 						<div class="table">
 						<table>
 							<tr>
-								<td>ideal with big design</td>
+								<th>Flexbox</th>
+								<th>Grid</th>
+							</tr>
+							<tr>
+								
 								<td>good for small design, with few rows and columns</td>
+								<td>ideal with big design</td>
 							</tr>
 							<tr>
-								<td>display: grid</td>
+								
 								<td>display: flex</td>
+								<td>display: grid</td>
 							</tr>
 							<tr>
-								<td>when one know how the elemts will look like</td>
+								
 								<td>when one dont know how the the content is going to look</td>
+								<td>when one know how the elemts will look like</td>
 							</tr>
 							<tr>
-								<td>Three dimensional</td>
+								
 								<td>Two dimensional</td>
+								<td>Three dimensional</td>
 							</tr>
 							<tr>
-								<td>Grid Gap Property</td>
+								
 								<td>No Break Points</td>
+								<td>Grid Gap Property</td>
 							</tr>
 							<tr>
-								<td>Over Lap Elemant. need rows and columns</td>
+								
 								<td>Need some Hacks like (margins,
 									transforms, or absolute positioning)</td>
+									<td>Over Lap Elemant. need rows and columns</td>
 							</tr>
 							<tr>
-								<td>You need a layout-first design</td>
+								
 								<td>two-dimensional layout system helps a lot when
 									to use rows and columns together, and position the elements the way we want</td>
+									<td>You need a layout-first design</td>
 							</tr>
 						</table>
 						</div>
